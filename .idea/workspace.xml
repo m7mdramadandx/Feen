@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="188c1b28-d3ff-4274-8feb-9ea33c44757b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/debug_android_application.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/flutter_assets.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/outputs.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/9f8bdf2dcc0d6498f0bba93fbfaf9e86/outputs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/lib/assets/icons/background_ram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/AssetManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/lib/assets/icons/background_ram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screen/AtmFinder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screen/AtmFinder.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screen/ChangePassword.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screen/ChangePassword.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screen/Dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screen/Dashboard.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screen/EditProfile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screen/EditProfile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screen/Profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screen/Profile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screen/Survey.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screen/Survey.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/service/Auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/service/Auth.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/service/Database.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/service/Database.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/service/MapService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/service/MapService.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Iphone_X" />
+  <component name="FavoritesManager">
+    <favorites_list name="Feen" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fKPMuslnI3vtCM5zMBKO8xqB9c" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/app/src/main/res/drawable" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mhmdr\Documents\flutterProjects\Feen\android\app\src\main\res\drawable" />
+      <recent name="C:\Users\mhmdr\Documents\flutterProjects\Feen\android\app\src\main" />
+      <recent name="C:\Users\mhmdr\Documents\flutterProjects\Feen\lib\ui\service" />
+      <recent name="C:\Users\mhmdr\Documents\flutterProjects\Feen\lib\ui\screen" />
+      <recent name="C:\Users\mhmdr\Documents\flutterProjects\New folder (2)\Fen\lib\ui\screen" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="188c1b28-d3ff-4274-8feb-9ea33c44757b" name="Default Changelist" comment="" />
+      <created>1595963773862</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595963773862</updated>
+    </task>
+    <task id="LOCAL-00001" summary="updated survey screen">
+      <created>1597181938574</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597181938574</updated>
+    </task>
+    <task id="LOCAL-00002" summary="updated profile screen">
+      <created>1597193967102</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597193967102</updated>
+    </task>
+    <task id="LOCAL-00003" summary="tries number role">
+      <created>1597481757540</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597481757613</updated>
+    </task>
+    <task id="LOCAL-00004" summary="tries number role">
+      <created>1597483296475</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597483296475</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="updated survey screen" />
+    <MESSAGE value="updated profile screen" />
+    <MESSAGE value="tries number role" />
+    <option name="LAST_COMMIT_MESSAGE" value="tries number role" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="51" y="121" key="#Images" timestamp="1596934799105">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="51" y="121" key="#Images/0.30.1536.834@0.30.1536.834" timestamp="1596934799105" />
+    <state x="239" y="377" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1596895975959">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="239" y="377" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.30.1536.834@0.30.1536.834" timestamp="1596895975959" />
+    <state x="314" y="198" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596890661443">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="314" y="198" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1536.834@0.30.1536.834" timestamp="1596890661443" />
+    <state x="230" y="162" key="#main.dart" timestamp="1595962422551">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="230" y="162" key="#main.dart/0.30.1536.834@0.30.1536.834" timestamp="1595962422551" />
+    <state x="339" y="295" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596892712124">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="339" y="295" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.30.1536.834@0.30.1536.834" timestamp="1596892712124" />
+    <state x="160" y="205" key="AndroidCreateResourceFileDialog" timestamp="1596934715451">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="160" y="205" key="AndroidCreateResourceFileDialog/0.30.1536.834@0.30.1536.834" timestamp="1596934715451" />
+    <state x="432" y="299" key="AndroidCreateXmlResourceDialog" timestamp="1596934671829">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="432" y="299" key="AndroidCreateXmlResourceDialog/0.30.1536.834@0.30.1536.834" timestamp="1596934671829" />
+    <state x="102" y="43" key="CommitChangelistDialog2" timestamp="1597483235223">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="102" y="43" key="CommitChangelistDialog2/0.30.1536.834@0.30.1536.834" timestamp="1597483235223" />
+    <state width="477" height="466" key="DebuggerActiveHint" timestamp="1596592730945">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="477" height="466" key="DebuggerActiveHint/0.30.1536.834@0.30.1536.834" timestamp="1596592730945" />
+    <state x="521" y="170" key="FileChooserDialogImpl" timestamp="1596986178357">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1596137010294" />
+    <state x="521" y="170" key="FileChooserDialogImpl/0.30.1536.834@0.30.1536.834" timestamp="1596986178357" />
+    <state width="1124" height="196" key="GridCell.Tab.0.bottom" timestamp="1597496296849">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
+    <state width="1124" height="196" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1597496296849" />
+    <state width="1124" height="196" key="GridCell.Tab.0.center" timestamp="1597496296849">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1323" height="191" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
+    <state width="1124" height="196" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1597496296849" />
+    <state width="1124" height="196" key="GridCell.Tab.0.left" timestamp="1597496296848">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1323" height="191" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
+    <state width="1124" height="196" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1597496296848" />
+    <state width="1124" height="196" key="GridCell.Tab.0.right" timestamp="1597496296849">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1323" height="191" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
+    <state width="1124" height="196" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1597496296849" />
+    <state x="88" y="30" key="SettingsEditor" timestamp="1596984831826">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="88" y="30" key="SettingsEditor/0.30.1536.834@0.30.1536.834" timestamp="1596984831826" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1596563053670">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.30.1536.834@0.30.1536.834" timestamp="1596563053670" />
+    <state x="58" y="137" width="1298" height="632" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1596937520560">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="58" y="137" width="1298" height="632" key="com.android.tools.idea.avdmanager.AvdListDialog/0.30.1536.834@0.30.1536.834" timestamp="1596937520560" />
+    <state x="7" y="78" width="1318" height="712" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597176262586">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="7" y="78" width="1318" height="712" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.30.1536.834@0.30.1536.834" timestamp="1597176262586" />
+    <state x="322" y="30" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596215265401">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="322" y="30" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.30.1366.738@0.30.1366.738" timestamp="1596215265401" />
+    <state width="425" height="209" key="javadoc.popup.new" timestamp="1596233389399">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="425" height="209" key="javadoc.popup.new/0.30.1366.738@0.30.1366.738" timestamp="1596233389399" />
+    <state x="255" y="206" key="run.anything.popup" timestamp="1597496532365">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="255" y="206" key="run.anything.popup/0.30.1536.834@0.30.1536.834" timestamp="1597496532365" />
+    <state x="262" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1596897966755">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="262" y="186" width="672" height="678" key="search.everywhere.popup/0.30.1536.834@0.30.1536.834" timestamp="1596897966755" />
+  </component>
+</project>

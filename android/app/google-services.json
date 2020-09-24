@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "307159159247",
+    "firebase_url": "https://feen-204d5.firebaseio.com",
+    "project_id": "feen-204d5",
+    "storage_bucket": "feen-204d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307159159247:android:cc3d897a34fb822eef82ba",
+        "android_client_info": {
+          "package_name": "com.fci.fen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307159159247-qvh01fgpqkv0j06i5e27trpr35mnhmdl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fci.fen",
+            "certificate_hash": "f7cbd38681924543581a15a1db683ef26e15f8c4"
+          }
+        },
+        {
+          "client_id": "307159159247-atasp40h3lbtr1dcds1ibdhinp3cu7vj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv5AaI7dnL9DNlzKrTD0j_GyW91jPE0_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307159159247-atasp40h3lbtr1dcds1ibdhinp3cu7vj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
