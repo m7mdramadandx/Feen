@@ -1,12 +1,11 @@
-import 'package:Fen/data/model/History.dart';
-import 'package:Fen/data/model/PlaceResult.dart';
-import 'package:Fen/data/model/userData.dart';
-import 'package:Fen/ui/service/Auth.dart';
+import 'package:Feen/models/History.dart';
+import 'package:Feen/models/PlaceResult.dart';
+import 'package:Feen/services/Auth.dart';
+import 'package:Feen/ui/screens/Dashboard.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:intl/intl.dart';
-import 'package:Fen/ui/screen/Dashboard.dart';
 
 class DatabaseService {
   static bool crowd = false;
@@ -19,6 +18,7 @@ class DatabaseService {
       Firestore.instance.collection('Survey');
   final CollectionReference userColection =
       Firestore.instance.collection('User');
+
   //UserData currentUser;
   static List<History> objectHistory;
   static String historyKey = "null";
@@ -369,7 +369,7 @@ class DatabaseService {
   static renewTriesNumber() async {
     final FirebaseAuth _auth = FirebaseAuth.instance;
     final CollectionReference userColection =
-    Firestore.instance.collection('User');
+        Firestore.instance.collection('User');
     currentUser = await AuthServices().CurrentUser();
     FirebaseUser user = await _auth.currentUser();
     final String uid = user.uid.toString();
@@ -388,12 +388,11 @@ class DatabaseService {
   }
 
   static updateTriesNumber(int number) async {
-
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-  final CollectionReference userColection =
-  Firestore.instance.collection('User');
+    final FirebaseAuth _auth = FirebaseAuth.instance;
+    final CollectionReference userColection =
+        Firestore.instance.collection('User');
     currentUser = await AuthServices().CurrentUser();
-     FirebaseUser user = await _auth.currentUser();
+    FirebaseUser user = await _auth.currentUser();
     final String uid = user.uid.toString();
     try {
       await userColection.document(uid).updateData({
@@ -458,12 +457,11 @@ class DatabaseService {
           .collection("History")
           .orderBy('date', descending: true)
           .snapshots()
-          .listen((data) =>
-          data.documents.forEach((doc) {
-            var history = History.fromJson(doc.data);
-            objectHistory.add(history);
-            historyKey = "found";
-          }));
+          .listen((data) => data.documents.forEach((doc) {
+                var history = History.fromJson(doc.data);
+                objectHistory.add(history);
+                historyKey = "found";
+              }));
       if (objectHistory.isEmpty) historyKey = "notFound";
     } catch (e) {
       print(e + " **************");

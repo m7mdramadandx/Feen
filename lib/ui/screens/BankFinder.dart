@@ -2,14 +2,13 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:ui';
 
-import 'package:Fen/data/model/Error.dart';
-import 'package:Fen/data/model/MenuList.dart';
-import 'package:Fen/data/model/PlaceResult.dart';
-import 'package:Fen/ui/service/MapService.dart';
-import 'package:Fen/util/colors.dart';
-import 'package:Fen/util/constants.dart';
-import 'package:Fen/util/loadResultWidget.dart';
-import 'package:Fen/util/util.dart';
+import 'package:Feen/models/Error.dart';
+import 'package:Feen/models/MenuList.dart';
+import 'package:Feen/models/PlaceResult.dart';
+import 'package:Feen/services/MapService.dart';
+import 'package:Feen/ui/widgets/colors.dart';
+import 'package:Feen/ui/widgets/constants.dart';
+import 'package:Feen/ui/widgets/util.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
@@ -438,9 +437,9 @@ class _AtmFinder extends State<BankFinder> {
                                 ]))));
                   }).toList())));
     } else if (MapService.bankKey == "notFound") {
-      return loadResultWidget.noResult();
+      return noResult();
     } else {
-      return loadResultWidget.loadResult();
+      return loadResult();
     }
   }
 

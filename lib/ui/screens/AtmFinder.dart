@@ -2,17 +2,16 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:ui';
 
-import 'package:Fen/data/model/Error.dart';
-import 'package:Fen/data/model/MenuList.dart';
-import 'package:Fen/data/model/PlaceResult.dart';
-import 'package:Fen/ui/screen/Survey.dart';
-import 'package:Fen/ui/service/Database.dart';
-import 'package:Fen/ui/service/MapService.dart';
-import 'package:Fen/util/colors.dart';
-import 'package:Fen/util/constants.dart';
-import 'package:Fen/util/defultData.dart';
-import 'package:Fen/util/loadResultWidget.dart';
-import 'package:Fen/util/util.dart';
+import 'package:Feen/models/Error.dart';
+import 'package:Feen/models/MenuList.dart';
+import 'package:Feen/models/PlaceResult.dart';
+import 'package:Feen/services/Database.dart';
+import 'package:Feen/services/MapService.dart';
+import 'package:Feen/ui/screens/Survey.dart';
+import 'package:Feen/ui/widgets/colors.dart';
+import 'package:Feen/ui/widgets/constants.dart';
+import 'package:Feen/ui/widgets/defaultData.dart';
+import 'package:Feen/ui/widgets/util.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
@@ -30,9 +29,9 @@ import 'package:sliding_sheet/sliding_sheet.dart';
 import 'package:spear_menu/spear_menu.dart';
 
 class AtmFinder extends StatefulWidget {
-  final Position _position;
+  final Position position;
 
-  const AtmFinder(this._position);
+  const AtmFinder(this.position);
 
   State<AtmFinder> createState() {
     return _AtmFinder();
@@ -75,7 +74,7 @@ class _AtmFinder extends State<AtmFinder> {
     } catch (e) {
       print(" **************");
     }
-    _currentPosition = widget._position;
+    _currentPosition = widget.position;
     _getCurrentLocation();
     controller = SheetController();
     MapService.setLocation(
@@ -225,7 +224,7 @@ class _AtmFinder extends State<AtmFinder> {
     } else if (offlinePin == null) {
       ImageConfiguration configuration = createLocalImageConfiguration(context);
       BitmapDescriptor.fromAssetImage(
-          configuration, 'lib/assets/icons/offlinePin.png')
+              configuration, 'lib/assets/icons/offlinePin.png')
           .then((offline) {
         setState(() {
           offlinePin = offline;
@@ -234,7 +233,7 @@ class _AtmFinder extends State<AtmFinder> {
     } else if (depositPin == null) {
       ImageConfiguration configuration = createLocalImageConfiguration(context);
       BitmapDescriptor.fromAssetImage(
-          configuration, 'lib/assets/icons/depositPin.png')
+              configuration, 'lib/assets/icons/depositPin.png')
           .then((deposit) {
         setState(() {
           depositPin = deposit;
@@ -483,13 +482,13 @@ class _AtmFinder extends State<AtmFinder> {
                                       child: CachedNetworkImage(
                                           imageUrl: imgUrl,
                                           imageBuilder: (context,
-                                              imageProvider) =>
+                                                  imageProvider) =>
                                               Container(
                                                   decoration: BoxDecoration(
                                                       image: DecorationImage(
                                                           image: imageProvider,
                                                           fit:
-                                                          BoxFit.cover))))),
+                                                              BoxFit.cover))))),
                                   SizedBox(width: 4.0),
                                   Expanded(
                                       flex: 70,
@@ -497,9 +496,9 @@ class _AtmFinder extends State<AtmFinder> {
                                         padding: const EdgeInsets.all(4),
                                         child: Column(
                                             mainAxisAlignment:
-                                            MainAxisAlignment.spaceEvenly,
+                                                MainAxisAlignment.spaceEvenly,
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.stretch,
+                                                CrossAxisAlignment.stretch,
                                             children: <Widget>[
                                               Text(atm.name,
                                                   textAlign: TextAlign.center,
@@ -507,7 +506,7 @@ class _AtmFinder extends State<AtmFinder> {
                                                       fontFamily: 'Cairo',
                                                       fontSize: 11.0,
                                                       fontWeight:
-                                                      FontWeight.w700,
+                                                          FontWeight.w700,
                                                       color: primaryColor)),
                                               SizedBox(
                                                   width: 150.0,
@@ -535,7 +534,7 @@ class _AtmFinder extends State<AtmFinder> {
                                                   }),
                                               Row(
                                                 mainAxisAlignment:
-                                                MainAxisAlignment.center,
+                                                    MainAxisAlignment.center,
                                                 children: <Widget>[
                                                   Icon(
                                                       FlutterIcons
@@ -557,11 +556,11 @@ class _AtmFinder extends State<AtmFinder> {
                                 ]))));
                   }).toList())));
     } else if (MapService.atmKey == "notFound") {
-      return loadResultWidget.noResult();
+      return noResult();
     } else if (MapService.atmKey == "overTries") {
-      return loadResultWidget.noResult();
+      return noResult();
     } else {
-      return loadResultWidget.loadResult();
+      return loadResult();
     }
   }
 
@@ -587,28 +586,28 @@ class _AtmFinder extends State<AtmFinder> {
     return Column(children: <Widget>[
       Expanded(
           child: GoogleMap(
-            myLocationButtonEnabled: false,
-            mapToolbarEnabled: false,
-            compassEnabled: false,
-            myLocationEnabled: true,
-            polylines: Set<Polyline>.of(polylines.values),
-            markers: Set<Marker>.of(markers),
-            onMapCreated: (GoogleMapController controller) {
-              setState(() {
-                _controller = controller;
-                _setStyle(controller);
-              });
-            },
-            initialCameraPosition: CameraPosition(
-                target: LatLng(
-                    _currentPosition.latitude != null
-                        ? _currentPosition.latitude
-                        : 30.5720681,
-                    _currentPosition.longitude != null
-                        ? _currentPosition.longitude
-                        : 31.0085726),
-                zoom: 12.5),
-          ))
+        myLocationButtonEnabled: false,
+        mapToolbarEnabled: false,
+        compassEnabled: false,
+        myLocationEnabled: true,
+        polylines: Set<Polyline>.of(polylines.values),
+        markers: Set<Marker>.of(markers),
+        onMapCreated: (GoogleMapController controller) {
+          setState(() {
+            _controller = controller;
+            _setStyle(controller);
+          });
+        },
+        initialCameraPosition: CameraPosition(
+            target: LatLng(
+                _currentPosition.latitude != null
+                    ? _currentPosition.latitude
+                    : 30.5720681,
+                _currentPosition.longitude != null
+                    ? _currentPosition.longitude
+                    : 31.0085726),
+            zoom: 12.5),
+      ))
     ]);
   }
 
@@ -824,45 +823,46 @@ class _AtmFinder extends State<AtmFinder> {
 
 // Notifications
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-  FlutterLocalNotificationsPlugin();
+      FlutterLocalNotificationsPlugin();
   AndroidInitializationSettings androidInitializationSettings;
   IOSInitializationSettings iosInitializationSettings;
   InitializationSettings initializationSettings;
 
   void initializing() async {
-    androidInitializationSettings = AndroidInitializationSettings('@mipmap/appicon');
+    androidInitializationSettings =
+        AndroidInitializationSettings('@mipmap/appicon');
     iosInitializationSettings = IOSInitializationSettings(
         onDidReceiveLocalNotification: onDidReceiveLocalNotification);
     initializationSettings = InitializationSettings(
         androidInitializationSettings, iosInitializationSettings);
     await flutterLocalNotificationsPlugin.initialize(initializationSettings,
         onSelectNotification: (String payload) async {
-          if (payload != null) {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return SurveyScreen(atm: _atm, bankName: targetBank);
-                },
-              ),
-            );
-          }
-        });
+      if (payload != null) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return SurveyScreen(atm: _atm, bankName: targetBank);
+            },
+          ),
+        );
+      }
+    });
   }
 
   Future<void> notificationAfterSec() async {
     var timeDelayed = DateTime.now().add(Duration(seconds: 5));
     AndroidNotificationDetails androidNotificationDetails =
-    AndroidNotificationDetails(
-        'second channel ID', 'second Channel title', 'second channel body',
-        priority: Priority.High,
-        importance: Importance.Max,
-        ticker: 'test');
+        AndroidNotificationDetails(
+            'second channel ID', 'second Channel title', 'second channel body',
+            priority: Priority.High,
+            importance: Importance.Max,
+            ticker: 'test');
 
     IOSNotificationDetails iosNotificationDetails = IOSNotificationDetails();
 
     NotificationDetails notificationDetails =
-    NotificationDetails(androidNotificationDetails, iosNotificationDetails);
+        NotificationDetails(androidNotificationDetails, iosNotificationDetails);
     await flutterLocalNotificationsPlugin.schedule(
         1,
         'تود افضل الخدمات لمكينات ال ATM 💳',

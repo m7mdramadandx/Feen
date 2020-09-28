@@ -1,19 +1,20 @@
 import 'dart:io';
 
-import 'package:Fen/data/model/PlaceResult.dart';
-import 'package:Fen/data/model/userData.dart';
-import 'package:Fen/ui/screen/Dashboard.dart';
-import 'package:Fen/ui/service/Auth.dart';
-import 'package:Fen/ui/service/Database.dart';
-import 'package:Fen/util/button_widget.dart';
-import 'package:Fen/util/colors.dart';
+import 'package:Feen/models/PlaceResult.dart';
+import 'package:Feen/models/userData.dart';
+import 'package:Feen/services/Auth.dart';
+import 'package:Feen/services/Database.dart';
+import 'package:Feen/ui/widgets/button_widget.dart';
+import 'package:Feen/ui/widgets/colors.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:expansion_tile_card/expansion_tile_card.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:intl/intl.dart' as intl;
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+
+import 'Dashboard.dart';
 
 // ignore: must_be_immutable
 class SurveyScreen extends StatefulWidget {
@@ -61,18 +62,18 @@ class _SurveyScreenState extends State<SurveyScreen> {
 
   Future<bool> noInternetConnection() async {
     return (await showDialog(
-      context: context,
-      builder: (context) => new AlertDialog(
-        title: new Text('عذرا ، لا يوجد اتصال بالإنترنت',
-            style: TextStyle(fontFamily: 'Cairo', color: primaryColor)),
-        content: CircleAvatar(
-            backgroundColor: Colors.transparent,
-            radius: 40,
-            child: Image.asset('lib/assets/icons/noInternet.png')),
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(15))),
-      ),
-    )) ??
+          context: context,
+          builder: (context) => new AlertDialog(
+            title: new Text('عذرا ، لا يوجد اتصال بالإنترنت',
+                style: TextStyle(fontFamily: 'Cairo', color: primaryColor)),
+            content: CircleAvatar(
+                backgroundColor: Colors.transparent,
+                radius: 40,
+                child: Image.asset('lib/assets/icons/noInternet.png')),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+          ),
+        )) ??
         false;
   }
 
@@ -108,7 +109,7 @@ class _SurveyScreenState extends State<SurveyScreen> {
   createMarker(context) {
     ImageConfiguration configuration = createLocalImageConfiguration(context);
     BitmapDescriptor.fromAssetImage(
-        configuration, 'lib/assets/icons/withdrawPin.png')
+            configuration, 'lib/assets/icons/withdrawPin.png')
         .then((_pin) {
       setState(() {
         pin = _pin;
@@ -119,17 +120,9 @@ class _SurveyScreenState extends State<SurveyScreen> {
   @override
   Widget build(BuildContext context) {
     createMarker(context);
-    final screenSize = MediaQuery
-        .of(context)
-        .size;
-    final screenHeight = (MediaQuery
-        .of(context)
-        .size
-        .height -
-        MediaQuery
-            .of(context)
-            .padding
-            .top);
+    final screenSize = MediaQuery.of(context).size;
+    final screenHeight = (MediaQuery.of(context).size.height -
+        MediaQuery.of(context).padding.top);
     setPin();
     return WillPopScope(
       onWillPop: _onBackPressed,
@@ -166,77 +159,79 @@ class _SurveyScreenState extends State<SurveyScreen> {
                   flex: 65,
                   child: SingleChildScrollView(
                       child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 12),
-                        child: Column(
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  border: Border.all(color: Colors.black26),
-                                  borderRadius: BorderRadius.vertical(
-                                      top: Radius.circular(25))),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment
-                                    .spaceBetween,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  questionItem('lib/assets/icons/crowd.png',
-                                      'هل الماكينة مزدحمة الأن؟', 1, _group1),
-                                  SizedBox(height: 8),
-                                  questionItem(
-                                      'lib/assets/icons/enoughMoney.png',
-                                      "هل عادة تتوفر النقود الكافية بالماكينة؟", 2, _group2),
-                                  SizedBox(height: 8),
-                                  questionItem('lib/assets/icons/atm.png',
-                                      "هل تتوفر خدمة الإيداع بالماكينة؟", 3, _group3),
-                                ],
-                              ),
-                            ),
-                            SizedBox(height: screenHeight * 0.05),
-                            RoundedButton(
-                              onPressed: () async {
-                                var now = DateTime.now();
-                                String date =
-                                intl.DateFormat('dd.MM.yyyy').format(now);
-                                String currentTime =
-                                    "${now.hour.toString().padLeft(2, '0')} ";
-                                databaseService.addSurvey(
-                                    crowdYes,
-                                    crowdNo,
-                                    moneyYes,
-                                    moneyNo,
-                                    statusYes,
-                                    statusNo,
-                                    date,
-                                    currentTime,
-                                    atm.placeId,
-                                    bankName);
-                                databaseService.updatePoints();
-                                databaseService.atmStatus(
-                                    bankName, atm.placeId);
-                                int p = int.tryParse(currentUser.survey);
-                                p += 1;
-                                survey = p.toString();
-
-                                checkIfdeposid(atm.placeId);
-                                Navigator.pushReplacement(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) {
-                                      return DashboardScreen(
-                                          userSurvey: survey);
-                                    },
-                                  ),
-                                );
-                              },
-                              color: primaryColor,
-                              textColor: Colors.white,
-                              title: 'تأكيد',
-                              leftMarginValue: 0,
-                            )
-                          ],
+                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(color: Colors.black26),
+                              borderRadius: BorderRadius.vertical(
+                                  top: Radius.circular(25))),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              questionItem('lib/assets/icons/crowd.png',
+                                  'هل الماكينة مزدحمة الأن؟', 1, _group1),
+                              SizedBox(height: 8),
+                              questionItem(
+                                  'lib/assets/icons/enoughMoney.png',
+                                  "هل عادة تتوفر النقود الكافية بالماكينة؟",
+                                  2,
+                                  _group2),
+                              SizedBox(height: 8),
+                              questionItem(
+                                  'lib/assets/icons/atm.png',
+                                  "هل تتوفر خدمة الإيداع بالماكينة؟",
+                                  3,
+                                  _group3),
+                            ],
+                          ),
                         ),
-                      )),
+                        SizedBox(height: screenHeight * 0.05),
+                        RoundedButton(
+                          onPressed: () async {
+                            var now = DateTime.now();
+                            String date =
+                                intl.DateFormat('dd.MM.yyyy').format(now);
+                            String currentTime =
+                                "${now.hour.toString().padLeft(2, '0')} ";
+                            databaseService.addSurvey(
+                                crowdYes,
+                                crowdNo,
+                                moneyYes,
+                                moneyNo,
+                                statusYes,
+                                statusNo,
+                                date,
+                                currentTime,
+                                atm.placeId,
+                                bankName);
+                            databaseService.updatePoints();
+                            databaseService.atmStatus(bankName, atm.placeId);
+                            int p = int.tryParse(currentUser.survey);
+                            p += 1;
+                            survey = p.toString();
+
+                            checkIfdeposid(atm.placeId);
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return DashboardScreen(userSurvey: survey);
+                                },
+                              ),
+                            );
+                          },
+                          color: primaryColor,
+                          textColor: Colors.white,
+                          title: 'تأكيد',
+                          leftMarginValue: 0,
+                        )
+                      ],
+                    ),
+                  )),
                 ),
               ],
             ),
@@ -246,7 +241,8 @@ class _SurveyScreenState extends State<SurveyScreen> {
     );
   }
 
-  Widget questionItem(String imgPath, String title, int questionNumber, int _group) {
+  Widget questionItem(
+      String imgPath, String title, int questionNumber, int _group) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: ExpansionTileCard(
@@ -259,8 +255,7 @@ class _SurveyScreenState extends State<SurveyScreen> {
             style: TextStyle(fontFamily: 'Cairo', color: grey)),
         baseColor: Colors.white,
         elevation: 4,
-        borderRadius: BorderRadius.vertical(
-            top: Radius.circular(25)),
+        borderRadius: BorderRadius.vertical(top: Radius.circular(25)),
         expandedColor: silver,
         children: <Widget>[
           Divider(thickness: 1.0, height: 1.0),
@@ -282,15 +277,17 @@ class _SurveyScreenState extends State<SurveyScreen> {
                         groupValue: _group,
                         onChanged: (value) {
                           setState(() {
-                            if (questionNumber == 1){
+                            if (questionNumber == 1) {
                               crowdNo = 0;
                               crowdYes = 1;
                               _group1 = value;
-                            }if (questionNumber == 2){
+                            }
+                            if (questionNumber == 2) {
                               moneyNo = 0;
                               moneyYes = 1;
                               _group2 = value;
-                            }if (questionNumber == 3){
+                            }
+                            if (questionNumber == 3) {
                               statusYes = 1;
                               statusNo = 0;
                               _group3 = value;
@@ -313,15 +310,17 @@ class _SurveyScreenState extends State<SurveyScreen> {
                         groupValue: _group,
                         onChanged: (value) {
                           setState(() {
-                            if (questionNumber == 1){
+                            if (questionNumber == 1) {
                               crowdNo = 1;
                               crowdYes = 0;
                               _group1 = value;
-                            }if (questionNumber == 2){
+                            }
+                            if (questionNumber == 2) {
                               moneyNo = 1;
                               moneyYes = 0;
                               _group2 = value;
-                            }if (questionNumber == 3){
+                            }
+                            if (questionNumber == 3) {
                               statusYes = 1;
                               statusNo = 0;
                               _group3 = value;
@@ -342,9 +341,8 @@ class _SurveyScreenState extends State<SurveyScreen> {
 
   Future<bool> _onBackPressed() async {
     return (await showDialog(
-      context: context,
-      builder: (context) =>
-          Directionality(
+          context: context,
+          builder: (context) => Directionality(
             textDirection: TextDirection.rtl,
             child: new AlertDialog(
               content: new Text('هل تريد حقًا الخروج من الاستبيان؟',
@@ -375,23 +373,25 @@ class _SurveyScreenState extends State<SurveyScreen> {
               ],
             ),
           ),
-    )) ??
+        )) ??
         false;
   }
 
-
-  void checkIfdeposid (String atmID) async{
-
+  void checkIfdeposid(String atmID) async {
     FirebaseAuth _auth = FirebaseAuth.instance;
     FirebaseUser user = await _auth.currentUser();
     String uid = user.uid.toString();
 
-    Firestore.instance.collection('User').document(uid).collection("History")
+    Firestore.instance
+        .collection('User')
+        .document(uid)
+        .collection("History")
         .where('latitude', isEqualTo: atm.geometry.location.lat)
-        .getDocuments().then((QuerySnapshot doc) {
+        .getDocuments()
+        .then((QuerySnapshot doc) {
       print(doc.documents.length);
       if (doc.documents.isNotEmpty) {
-        print ("YEEEEEEEEEEEEEEEEEEEEEEES");
+        print("YEEEEEEEEEEEEEEEEEEEEEEES");
       }
     });
   }

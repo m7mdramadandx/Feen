@@ -1,17 +1,15 @@
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:Fen/data/model/PlaceResponse.dart';
-import 'package:Fen/data/model/PlaceResult.dart';
-import 'package:Fen/data/model/userData.dart';
-import 'package:Fen/ui/service/Auth.dart';
-import 'package:Fen/ui/service/Database.dart';
-import 'package:Fen/util/constants.dart';
+import 'package:Feen/models/PlaceResponse.dart';
+import 'package:Feen/models/PlaceResult.dart';
+import 'package:Feen/services/Database.dart';
+import 'package:Feen/ui/screens/Dashboard.dart';
+import 'package:Feen/ui/widgets/constants.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
-import 'package:Fen/ui/screen/Dashboard.dart';
 
 class MapService {
   //static UserData currentUser;
@@ -138,11 +136,11 @@ class MapService {
         .collection(currentHour)
         .snapshots()
         .listen((data) => data.documents.forEach((doc) {
-      objectAtm[index].crowd = doc.data['crowd'];
-      objectAtm[index].type = doc.data['type'];
-      objectAtm[index].enoughMoney = doc.data['enoughMoney'];
+              objectAtm[index].crowd = doc.data['crowd'];
+              objectAtm[index].type = doc.data['type'];
+              objectAtm[index].enoughMoney = doc.data['enoughMoney'];
 //              objectAtm[index].rating = doc.data['rating'];
-    }));
+            }));
   }
 
   static getAtmName(int x) {
@@ -154,7 +152,7 @@ class MapService {
         places[x].name.contains(keyword6)) {
       atmKey = "found";
       places[x].distance = calculateDistance(latitude, longitude,
-          places[x].geometry.location.lat, places[x].geometry.location.long)
+              places[x].geometry.location.lat, places[x].geometry.location.long)
           .toStringAsFixed(1);
       objectAtm.add(places[x]);
     }
@@ -169,7 +167,7 @@ class MapService {
         places[x].name.contains(keyword6)) {
       bankKey = "found";
       places[x].distance = calculateDistance(latitude, longitude,
-          places[x].geometry.location.lat, places[x].geometry.location.long)
+              places[x].geometry.location.lat, places[x].geometry.location.long)
           .toStringAsFixed(1);
       objectBank.add(places[x]);
     }
@@ -200,7 +198,8 @@ class MapService {
     }
   }
 
-  static double calculateDistance(double srcLat, double srcLng, double distLat, double distLng) {
+  static double calculateDistance(
+      double srcLat, double srcLng, double distLat, double distLng) {
     var p = 0.017453292519943295;
     var c = cos;
     var a = 0.5 -

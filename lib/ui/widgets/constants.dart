@@ -1,8 +1,47 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 import 'colors.dart';
 
 const double formContainerHeight = 430;
+
+Widget loadResult() {
+  return Center(
+    child: Padding(
+      padding: const EdgeInsets.symmetric(vertical: 34),
+      child: SpinKitChasingDots(
+        size: 50,
+        itemBuilder: (BuildContext context, int index) {
+          return DecoratedBox(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+              color: index.isEven ? primaryColor : grey,
+            ),
+          );
+        },
+      ),
+    ),
+  );
+}
+
+Widget noResult() {
+  return Center(
+    child: Padding(
+      padding: const EdgeInsets.symmetric(vertical: 34),
+      child: SpinKitChasingDots(
+        size: 50,
+        itemBuilder: (BuildContext context, int index) {
+          return DecoratedBox(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+              color: index.isEven ? error : grey,
+            ),
+          );
+        },
+      ),
+    ),
+  );
+}
 
 const kTitleTextStyle = TextStyle(
   fontSize: 40.0,
@@ -95,7 +134,7 @@ const List<String> imagePath = [
 const List<String> description = [
   "وقتك ثمين لا تضيعه بصفوف الانتظار الطويلة",
   "تعرف على الماكينات و البنوك القريبين منك نسبة لموقعك الحالي",
-  "اينما كانت وجهتك سنتيح لك معرفة ما اذا كانت الماكينة للايداع ام السحب ام تتوافر بها كلا الخدمتين" ,
+  "اينما كانت وجهتك سنتيح لك معرفة ما اذا كانت الماكينة للايداع ام السحب ام تتوافر بها كلا الخدمتين",
 ];
 
 const String tip000 =
@@ -106,8 +145,7 @@ const String tip001 =
         "\n";
 
 const String tip002 = "•	يتم كتابة كلمه السرالمكونة من 4 أرقام" + "\n";
-const String tip003 =
-    "•	يتم الضغط علي كلمه استمرار لاستكمال العملية " + "\n";
+const String tip003 = "•	يتم الضغط علي كلمه استمرار لاستكمال العملية " + "\n";
 const String tip004 = "•	يتم اختيار اللغه (العربيه /  الانجليزية )" + "\n";
 const String tip005 =
     "•	سيتم إظهار بعض المبالغ التي من الممكن ان يكون احداها المطلوب أو إختيار خدمات اخري " +
@@ -165,8 +203,7 @@ const String tip6 =
 /////////////////////////////////خدمة الإيداع////////////////////////////////
 const String tip01 = "1)	سيظهر لك المبلغ المتبقي في الحساب " + "\n";
 const String tip02 =
-    "2)	اذا اردت السحب منه سيتم الضغط علي خدمات اخرى لاجراء عملية السحب" +
-        "\n";
+    "2)	اذا اردت السحب منه سيتم الضغط علي خدمات اخرى لاجراء عملية السحب" + "\n";
 const String tip03 =
     "3)	في حاله الاحتياج الي ايصال مطبوع يتم الضغط علي ايصال ثم انتظار خروج الايصال " +
         "\n";
@@ -207,8 +244,7 @@ const String tip108 =
     "8)	إدخال المبلغ, ثم تأكد من صحة المبلغ و سلامة الاوراق  " + "\n";
 
 const String tip109 =
-    "9)	الضغط علي موافق ( في حالة صحة المبلغ الموضح امامك علي الشاشة )" +
-        "\n";
+    "9)	الضغط علي موافق ( في حالة صحة المبلغ الموضح امامك علي الشاشة )" + "\n";
 
 const String tip1010 = "10)	استلام الايصال ثم الكارت " + "\n";
 
@@ -220,8 +256,7 @@ const String tip100 =
 const String tip110 =
     "2)	الضغط علي تبرعات, ثم اختر الحساب الذي ترغب باستخدامه" + "\n";
 
-const String tip120 =
-    "3)	سيظهر بعض الجهات التي تقبل التعامل مع البنك" + "\n";
+const String tip120 = "3)	سيظهر بعض الجهات التي تقبل التعامل مع البنك" + "\n";
 
 const String tip130 = "4)	قم باختيار الجهة التي ترغب في التبرع لها " + "\n";
 
@@ -266,7 +301,6 @@ const String tip01003 =
 
 /////////////////////////////////خدمة السحب /////////////////////////////////
 
-
 const String apiKey = "AIzaSyAyLfzsvWUdO67AU6Jmpfp8BWfEI4IFTi8";
 
 String alahlyImgUrl =
@@ -280,4 +314,3 @@ String alahlyImgUrl =
         "https://www.banquemisr.com/en/aboutus/PublishingImages/Corporate%20ID/IDLogo.jpg",
     kaheraImgUrlBank =
         "https://www.fintechfutures.com/files/2019/06/banque-du-caire.jpg";
-

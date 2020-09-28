@@ -1,4 +1,4 @@
-import 'package:Fen/data/model/userData.dart';
+import 'package:Feen/models/userData.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -6,7 +6,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 class AuthServices {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final CollectionReference userColection =
-  Firestore.instance.collection('User');
+      Firestore.instance.collection('User');
   final DateTime timestamp = DateTime.now();
   UserData currentUser;
 
@@ -31,13 +31,13 @@ class AuthServices {
       String lname, String phone, String job) async {
     String errorMessage;
     try {
-      final FirebaseUser oldUser = await _auth.currentUser();
+      final FirebaseUser oldUser = _auth.currentUser as FirebaseUser;
       if (oldUser != null) {
         oldUser.delete();
       } else {
         print('delete error');
       }
-      AuthResult result = await _auth.createUserWithEmailAndPassword(
+      var result = await _auth.createUserWithEmailAndPassword(
           email: email, password: password);
       currentUser = await addUserData(
           result.user.uid, fname, lname, result.user.email, phone, job);
@@ -63,7 +63,7 @@ class AuthServices {
 
 // ignore: non_constant_identifier_names
   Future<UserData> CurrentUser() async {
-    FirebaseUser user = await _auth.currentUser();
+    FirebaseUser user = _auth.currentUser as FirebaseUser;
     DocumentSnapshot doc = await userColection.document(user.uid).get();
     return UserData.fromDocument(doc);
   }
@@ -78,13 +78,14 @@ class AuthServices {
   }
 
   Future updateEmail(String email) async {
-    FirebaseUser user = await _auth.currentUser();
+    FirebaseUser user = _auth.currentUser as FirebaseUser;
     user.updateEmail(email);
   }
 
   Future updatePassword(String password) async {
     String errorMessage;
-    FirebaseUser user = await FirebaseAuth.instance.currentUser();
+    FirebaseUser user =
+        (await FirebaseAuth.instance.currentUser) as FirebaseUser;
     user.updatePassword(password).catchError((error) {
       switch (error.code) {
         case "ERROR_WEAK_PASSWORD":

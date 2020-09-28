@@ -1,6 +1,6 @@
-import 'package:Fen/util/button_widget.dart';
-import 'package:Fen/util/colors.dart';
-import 'package:Fen/util/constants.dart';
+import 'package:Feen/ui/widgets/button_widget.dart';
+import 'package:Feen/ui/widgets/colors.dart';
+import 'package:Feen/ui/widgets/constants.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';

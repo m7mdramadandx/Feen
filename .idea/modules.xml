@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Fen.iml" filepath="$PROJECT_DIR$/Fen.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/fen_android.iml" filepath="$PROJECT_DIR$/android/fen_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Feen.iml" filepath="$PROJECT_DIR$/Feen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/feen_android.iml" filepath="$PROJECT_DIR$/android/feen_android.iml" />
     </modules>
   </component>
 </project>

@@ -1,9 +1,9 @@
-import 'package:Fen/ui/service/Auth.dart';
-import 'package:Fen/ui/service/Validate.dart';
-import 'package:Fen/util/button_widget.dart';
-import 'package:Fen/util/colors.dart';
-import 'package:Fen/util/constants.dart';
-import 'package:Fen/util/textfield_widget.dart';
+import 'package:Feen/services/Auth.dart';
+import 'package:Feen/services/Validate.dart';
+import 'package:Feen/ui/widgets/button_widget.dart';
+import 'package:Feen/ui/widgets/colors.dart';
+import 'package:Feen/ui/widgets/constants.dart';
+import 'package:Feen/ui/widgets/textfield_widget.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
@@ -18,7 +18,6 @@ class ForgotPasswordScreen extends StatefulWidget {
 }
 
 class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
-
   AuthServices authService = AuthServices();
   String email;
 

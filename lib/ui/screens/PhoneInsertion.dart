@@ -1,12 +1,10 @@
 import 'dart:io';
 
-import 'package:Fen/ui/screen/Login.dart';
-import 'package:Fen/ui/service/Validate.dart';
-import 'package:Fen/util/button_widget.dart';
-import 'package:Fen/util/colors.dart';
-import 'package:Fen/util/constants.dart';
-import 'package:Fen/util/loadResultWidget.dart';
-import 'package:Fen/util/textfield_widget.dart';
+import 'package:Feen/services/Validate.dart';
+import 'package:Feen/ui/widgets/button_widget.dart';
+import 'package:Feen/ui/widgets/colors.dart';
+import 'package:Feen/ui/widgets/constants.dart';
+import 'package:Feen/ui/widgets/textfield_widget.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
@@ -14,6 +12,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import 'Login.dart';
 import 'SignUp.dart';
 import 'Verification.dart';
 
@@ -195,8 +194,7 @@ class _PhoneInsertionScreenState extends State<PhoneInsertionScreen> {
                   style: TextStyle(fontFamily: 'Cairo', color: primaryColor)),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(15))),
-              content:
-                  Container(height: 120, child: loadResultWidget.loadResult()),
+              content: Container(height: 120, child: loadResult()),
             ),
           );
         });

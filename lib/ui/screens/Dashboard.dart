@@ -1,24 +1,27 @@
-import 'package:Fen/data/model/userData.dart';
-import 'package:Fen/ui/screen/AtmFinder.dart';
-import 'package:Fen/ui/screen/BankFinder.dart';
-import 'package:Fen/ui/service/Auth.dart';
-import 'package:Fen/ui/service/Database.dart';
-import 'package:Fen/util/animation/FadeAnimation.dart';
-import 'package:Fen/util/colors.dart';
-import 'package:Fen/util/constants.dart';
+import 'package:Feen/models/userData.dart';
+import 'package:Feen/services/Auth.dart';
+import 'package:Feen/services/Database.dart';
+import 'package:Feen/ui/screens/AtmFinder.dart';
+import 'package:Feen/ui/widgets/animation/FadeAnimation.dart';
+import 'package:Feen/ui/widgets/colors.dart';
+import 'package:Feen/ui/widgets/constants.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:geolocator/geolocator.dart';
 
+import 'BankFinder.dart';
 import 'Profile.dart';
 import 'Tips.dart';
 
 final CollectionReference usersRef = Firestore.instance.collection('User');
 UserData currentUser;
+
 // ignore: must_be_immutable
 class DashboardInfo extends StatefulWidget {
   String userSurvey;
@@ -41,7 +44,6 @@ class _DashboardInfoState extends State<DashboardInfo> {
   }
 }
 
-// ignore: must_be_immutable
 class DashboardScreen extends StatefulWidget {
   String userSurvey;
 
@@ -58,7 +60,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
   String userSurvey;
 
   _DashboardScreenState({this.userSurvey});
-
 
   int restSurveys;
   Position currentPosition;
@@ -155,7 +156,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           color: Colors.white,
                           shape: RoundedRectangleBorder(
                               borderRadius:
-                              BorderRadius.all(Radius.circular(25))),
+                                  BorderRadius.all(Radius.circular(25))),
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               mainAxisSize: MainAxisSize.max,
@@ -164,9 +165,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                     padding: EdgeInsets.only(right: 16),
                                     child: Column(
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                            CrossAxisAlignment.start,
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
+                                            MainAxisAlignment.spaceEvenly,
                                         children: <Widget>[
                                           Expanded(
                                             child: AutoSizeText(
@@ -205,7 +206,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius:
-                        BorderRadius.vertical(top: Radius.circular(25)),
+                            BorderRadius.vertical(top: Radius.circular(25)),
                       ),
                       padding: EdgeInsets.all(16),
                       child: SingleChildScrollView(
@@ -218,26 +219,24 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                   Expanded(
                                     child: cardWidget('أفضل ماكينة',
                                         'lib/assets/icons/atm.png', () {
-                                          Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (builder) =>
-                                                      AtmFinder(
-                                                          currentPosition)));
-                                        }),
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (builder) =>
+                                                  AtmFinder(currentPosition)));
+                                    }),
                                   ),
                                   SizedBox(width: screenWidth * 0.05),
                                   Expanded(
                                     child: cardWidget(
                                         'أفضل بنك', 'lib/assets/icons/bank.png',
-                                            () {
-                                          Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (builder) =>
-                                                      BankFinder(
-                                                          currentPosition)));
-                                        }),
+                                        () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (builder) =>
+                                                  BankFinder(currentPosition)));
+                                    }),
                                   ),
                                 ]),
                               ),
@@ -248,24 +247,22 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                   Expanded(
                                       child: cardWidget('الصفحة الشخصية',
                                           'lib/assets/icons/user.png', () {
-                                            Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                    builder: (builder) =>
-                                                        ProfileScreen(
-                                                            userData: currentUser,
-                                                            infoChanged: false)));
-                                          })),
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (builder) => ProfileScreen(
+                                                userData: currentUser,
+                                                infoChanged: false)));
+                                  })),
                                   SizedBox(width: screenWidth * 0.05),
                                   Expanded(
                                       child: cardWidget("إرشادات و تعليمات",
                                           'lib/assets/icons/tips.png', () {
-                                            Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                    builder: (builder) =>
-                                                        Tips()));
-                                          }))
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (builder) => Tips()));
+                                  }))
                                 ]),
                               ),
                             ]),
@@ -366,9 +363,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   Future<bool> _onBackPressed() async {
     return (await showDialog(
-      context: context,
-      builder: (context) =>
-          Directionality(
+          context: context,
+          builder: (context) => Directionality(
             textDirection: TextDirection.rtl,
             child: new AlertDialog(
               content: new Text('هل تريد حقًا الخروج من التطبيق؟',
@@ -399,7 +395,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               ],
             ),
           ),
-    )) ??
+        )) ??
         false;
   }
 }

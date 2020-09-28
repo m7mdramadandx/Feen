@@ -1,9 +1,9 @@
-import 'package:Fen/data/model/userData.dart';
-import 'package:Fen/ui/screen/Dashboard.dart';
-import 'package:Fen/ui/service/Auth.dart';
-import 'package:Fen/util//button_widget.dart';
-import 'package:Fen/util//introScreenContent.dart';
-import 'package:Fen/util/colors.dart';
+import 'package:Feen/models/userData.dart';
+import 'package:Feen/services/Auth.dart';
+import 'package:Feen/ui/screens/Dashboard.dart';
+import 'package:Feen/ui/widgets/button_widget.dart';
+import 'package:Feen/ui/widgets/colors.dart';
+import 'package:Feen/ui/widgets/introScreenContent.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -40,7 +40,6 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[

@@ -1,9 +1,9 @@
-import 'package:Fen/data/model/userData.dart';
-import 'package:Fen/ui/screen/EditProfile.dart';
-import 'package:Fen/ui/service/Database.dart';
-import 'package:Fen/util/ProfileHeader.dart';
-import 'package:Fen/util/colors.dart';
-import 'package:Fen/util/loadResultWidget.dart';
+import 'package:Feen/models/userData.dart';
+import 'package:Feen/services/Auth.dart';
+import 'package:Feen/services/Database.dart';
+import 'package:Feen/ui/widgets/ProfileHeader.dart';
+import 'package:Feen/ui/widgets/colors.dart';
+import 'package:Feen/ui/widgets/constants.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:fancy_drawer/fancy_drawer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -14,8 +14,9 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:getwidget/components/button/gf_button.dart';
 import 'package:getwidget/position/gf_position.dart';
 import 'package:getwidget/types/gf_button_type.dart';
-import 'package:Fen/ui/screen/Dashboard.dart';
-import 'package:Fen/ui/service/Auth.dart';
+
+import 'Dashboard.dart';
+import 'EditProfile.dart';
 import 'History.dart';
 import 'Login.dart';
 
@@ -319,9 +320,9 @@ class _ProfileScreenState extends State<ProfileScreen>
     if (DatabaseService.historyKey == "found") {
       return History();
     } else if (DatabaseService.historyKey == "notFound") {
-      return loadResultWidget.noResult();
+      return noResult();
     } else {
-      return loadResultWidget.loadResult();
+      return loadResult();
     }
   }
 

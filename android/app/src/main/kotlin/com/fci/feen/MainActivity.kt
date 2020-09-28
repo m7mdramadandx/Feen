@@ -1,4 +1,4 @@
-package com.fci.fen
+package com.fci.feen
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

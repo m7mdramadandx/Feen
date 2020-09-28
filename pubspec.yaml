@@ -1,4 +1,4 @@
-name: Fen
+name: Feen
 description: A new Flutter application.
 
 
@@ -20,18 +20,18 @@ dependencies:
   flutter_spinkit: ^4.1.2+1
   simple_animations: ^2.2.1
   page_transition: ^1.1.6
-  flutter_polyline_points: ^0.2.2
+  flutter_polyline_points: ^0.2.3
   geolocator: ^5.3.2+2
   google_maps_flutter:
   http: ^0.12.2
   after_layout: ^1.0.7
-  cached_network_image: ^2.0.0
-  sliding_sheet: ^0.3.7
+  cached_network_image: ^2.3.2+1
+  sliding_sheet: ^0.4.0
   carousel_slider: ^1.4.1
   cloud_firestore: ^0.12.6
   firebase_auth: ^0.16.1
-  fluttertoast: ^3.1.3
-  intl: ^0.15.8
+  fluttertoast: ^7.1.1
+  intl: ^0.16.1
   flutter_local_notifications:
   auto_size_text: ^2.1.0
   pin_entry_text_field:
@@ -39,12 +39,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 flutter:
   uses-material-design: true
   assets:
-    - lib/assets/light_map.json
-    - lib/assets/icons/
-    - lib/assets/images/
+    - assets/light_map.json
+    - assets/icons/
+    - assets/images/
   fonts:
     - family: Cairo
       fonts:

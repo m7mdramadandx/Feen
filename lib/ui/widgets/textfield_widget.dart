@@ -1,4 +1,4 @@
-import 'package:Fen/util/constants.dart';
+import 'package:Feen/ui/widgets/constants.dart';
 import 'package:flutter/material.dart';
 
 import 'colors.dart';

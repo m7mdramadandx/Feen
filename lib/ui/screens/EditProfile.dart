@@ -1,13 +1,13 @@
-import 'package:Fen/data/model/userData.dart';
-import 'package:Fen/ui/screen/Profile.dart';
-import 'package:Fen/ui/service/Auth.dart';
-import 'package:Fen/ui/service/Database.dart';
-import 'package:Fen/ui/service/Validate.dart';
-import 'package:Fen/util/ProfileHeader.dart';
-import 'package:Fen/util/actionedLabel.dart';
-import 'package:Fen/util/button_widget.dart';
-import 'package:Fen/util/colors.dart';
-import 'package:Fen/util/textfield_widget.dart';
+import 'package:Feen/models/userData.dart';
+import 'package:Feen/services/Auth.dart';
+import 'package:Feen/services/Database.dart';
+import 'package:Feen/services/Validate.dart';
+import 'package:Feen/ui/screens/Profile.dart';
+import 'package:Feen/ui/widgets/ProfileHeader.dart';
+import 'package:Feen/ui/widgets/actionedLabel.dart';
+import 'package:Feen/ui/widgets/button_widget.dart';
+import 'package:Feen/ui/widgets/colors.dart';
+import 'package:Feen/ui/widgets/textfield_widget.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
@@ -28,7 +28,6 @@ class _EditDataScreenState extends State<EditDataScreen> {
   final UserData userData;
 
   _EditDataScreenState({this.userData});
-
 
   final _formKey = GlobalKey<FormState>();
   String email, firstName, phone, lastName;

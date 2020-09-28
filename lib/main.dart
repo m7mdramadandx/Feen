@@ -1,22 +1,24 @@
-import 'package:Fen/ui/screen/Dashboard.dart';
-import 'package:Fen/ui/screen/Introduction.dart';
-import 'package:Fen/ui/screen/Landing.dart';
-import 'package:Fen/ui/screen/Login.dart';
-import 'package:Fen/ui/screen/PhoneInsertion.dart';
-import 'package:Fen/ui/screen/SignUp.dart';
-import 'package:Fen/util/colors.dart';
+import 'package:Feen/ui/widgets/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'ui/screens/Dashboard.dart';
+import 'ui/screens/Introduction.dart';
+import 'ui/screens/Landing.dart';
+import 'ui/screens/Login.dart';
+import 'ui/screens/PhoneInsertion.dart';
+import 'ui/screens/SignUp.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  runApp(AtmFinder());
+  runApp(Feen());
+
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitUp]);
 }
 
-class AtmFinder extends StatelessWidget {
+class Feen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
