@@ -63,7 +63,7 @@ class AuthServices {
 
 // ignore: non_constant_identifier_names
   Future<UserData> CurrentUser() async {
-    FirebaseUser user = _auth.currentUser as FirebaseUser;
+    FirebaseUser user = await _auth.currentUser();
     DocumentSnapshot doc = await userColection.document(user.uid).get();
     return UserData.fromDocument(doc);
   }

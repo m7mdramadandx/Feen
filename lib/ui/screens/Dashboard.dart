@@ -121,11 +121,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   child: IconButton(
                       icon: Icon(Ionicons.md_notifications_outline,
                           color: gold, size: 32),
-                      onPressed: () {}),
+                      onPressed: null),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 16),
+                padding: EdgeInsets.only(right: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -366,14 +366,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
           context: context,
           builder: (context) => Directionality(
             textDirection: TextDirection.rtl,
-            child: new AlertDialog(
-              content: new Text('هل تريد حقًا الخروج من التطبيق؟',
+            child: AlertDialog(
+              content: Text('هل تريد حقًا الخروج من التطبيق؟',
                   style: TextStyle(fontFamily: 'Cairo', color: grey)),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(15))),
               backgroundColor: silver,
               actions: <Widget>[
-                new FlatButton(
+                FlatButton(
                   onPressed: () => Navigator.of(context).pop(false),
                   child: new Text('لا',
                       style: TextStyle(
@@ -381,7 +381,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           color: primaryColor,
                           fontWeight: FontWeight.bold)),
                 ),
-                new FlatButton(
+                FlatButton(
                   onPressed: () {
                     Navigator.of(context).pop(true);
                     super.dispose();

@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:io';
 import 'dart:ui';
 
 import 'package:Feen/models/Error.dart';
@@ -68,7 +67,6 @@ class _AtmFinder extends State<AtmFinder> {
   @override
   void initState() {
     super.initState();
-    checkInternet();
     try {
       initializing();
     } catch (e) {
@@ -81,36 +79,6 @@ class _AtmFinder extends State<AtmFinder> {
         _currentPosition.latitude, _currentPosition.longitude);
     MapService.getNearbyAtm(targetBank, targetOperation);
     expandSheet();
-  }
-
-  checkInternet() async {
-    try {
-      final result = await InternetAddress.lookup('google.com');
-      if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {}
-    } on SocketException catch (_) {
-      noInternetConnection();
-      MapService.atmKey = "notFound";
-    }
-  }
-
-  Future<bool> noInternetConnection() async {
-    return (await showDialog(
-          context: context,
-          builder: (context) => Directionality(
-            textDirection: TextDirection.rtl,
-            child: new AlertDialog(
-              title: new Text('عذرا ، لا يوجد اتصال بالإنترنت',
-                  style: TextStyle(fontFamily: 'Cairo', color: primaryColor)),
-              content: CircleAvatar(
-                  backgroundColor: Colors.transparent,
-                  radius: 40,
-                  child: Image.asset('lib/assets/icons/noInternet.png')),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(15))),
-            ),
-          ),
-        )) ??
-        false;
   }
 
   Future<bool> waitNotification() async {
@@ -282,6 +250,7 @@ class _AtmFinder extends State<AtmFinder> {
 
   @override
   Widget build(BuildContext context) {
+    checkInternet(context);
     createMarker(context);
     final screenSize = MediaQuery.of(context).size;
     SpearMenu.context = context;
@@ -306,11 +275,9 @@ class _AtmFinder extends State<AtmFinder> {
                 child: Row(
                   children: <Widget>[
                     IconButton(
-                      icon: Icon(Ionicons.md_arrow_round_forward, color: grey),
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
-                    ),
+                        icon:
+                            Icon(Ionicons.md_arrow_round_forward, color: grey),
+                        onPressed: () => Navigator.of(context).pop()),
                     SizedBox(width: 2),
                     Container(
                       child: AutoSizeText(
@@ -332,9 +299,7 @@ class _AtmFinder extends State<AtmFinder> {
                   bottom: screenSize.height * 0.35,
                   right: 8,
                   child: FloatingActionButton(
-                    onPressed: () {
-                      setBank(btnKey1);
-                    },
+                    onPressed: () => setBank(btnKey1),
                     heroTag: "bankName",
                     key: btnKey1,
                     mini: true,
@@ -348,9 +313,7 @@ class _AtmFinder extends State<AtmFinder> {
                   child: Directionality(
                       textDirection: TextDirection.rtl,
                       child: FloatingActionButton(
-                        onPressed: () {
-                          setOperation(btnKey);
-                        },
+                        onPressed: () => setOperation(btnKey),
                         key: btnKey,
                         mini: true,
                         heroTag: "operationType",

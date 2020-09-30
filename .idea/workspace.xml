@@ -10,67 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="188c1b28-d3ff-4274-8feb-9ea33c44757b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/mhmdr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/mhmdr.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Feen.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/kotlin/com/fci/fen/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/kotlin/com/fci/feen/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/fen_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/feen_android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Feen.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/Error.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/Geometry.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/History.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/MenuList.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/PlaceResponse.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/PlaceResult.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/user.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/userData.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/AtmFinder.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/BankFinder.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/ChangePassword.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/Dashboard.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/EditProfile.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/ForgotPassword.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/History.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/Introduction.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/Landing.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/Login.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/PhoneInsertion.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/Profile.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/SignUp.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/Survey.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/Tips.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screen/Verification.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/service/Auth.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/service/Database.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/service/MapService.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/service/Validate.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/ProfileHeader.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/actionedLabel.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/animation/FadeAnimation.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/button_widget.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/colors.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/constants.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/custom_container.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/defultData.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/introScreenContent.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/loadResultWidget.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/textfield_widget.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util/util.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/user.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/userData.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/userData.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screens/AtmFinder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/AtmFinder.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screens/Dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/Dashboard.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screens/Introduction.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/Introduction.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screens/Landing.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/Landing.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screens/Login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/Login.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/screens/PhoneInsertion.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/PhoneInsertion.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/widgets/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/widgets/constants.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Iphone_X" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="FUH0216913011885" />
   <component name="FavoritesManager">
     <favorites_list name="Feen" />
   </component>
@@ -99,7 +67,7 @@
     <property name="ignore_missing_gitignore" value="true" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -115,57 +83,15 @@
       <recent name="C:\Users\mhmdr\Documents\flutterProjects\New folder (2)\Fen\lib\ui\screen" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="cd android &amp;&amp; ./gradlew signingReport a" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Feen" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Feen" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -212,6 +138,16 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -274,35 +210,39 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="477" height="466" key="DebuggerActiveHint/0.30.1536.834@0.30.1536.834" timestamp="1596592730945" />
-    <state x="521" y="170" key="FileChooserDialogImpl" timestamp="1596986178357">
+    <state x="521" y="170" key="FileChooserDialogImpl" timestamp="1601380343445">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1596137010294" />
-    <state x="521" y="170" key="FileChooserDialogImpl/0.30.1536.834@0.30.1536.834" timestamp="1596986178357" />
-    <state width="1124" height="196" key="GridCell.Tab.0.bottom" timestamp="1597496296849">
+    <state x="521" y="170" key="FileChooserDialogImpl/0.30.1536.834@0.30.1536.834" timestamp="1601380343445" />
+    <state width="1014" height="196" key="GridCell.Tab.0.bottom" timestamp="1601389638377">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
-    <state width="1124" height="196" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1597496296849" />
-    <state width="1124" height="196" key="GridCell.Tab.0.center" timestamp="1597496296849">
+    <state width="1014" height="196" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1601389638377" />
+    <state width="1014" height="196" key="GridCell.Tab.0.center" timestamp="1601389638377">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
-    <state width="1124" height="196" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1597496296849" />
-    <state width="1124" height="196" key="GridCell.Tab.0.left" timestamp="1597496296848">
+    <state width="1014" height="196" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1601389638377" />
+    <state width="1014" height="196" key="GridCell.Tab.0.left" timestamp="1601389638377">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
-    <state width="1124" height="196" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1597496296848" />
-    <state width="1124" height="196" key="GridCell.Tab.0.right" timestamp="1597496296849">
+    <state width="1014" height="196" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1601389638377" />
+    <state width="1014" height="196" key="GridCell.Tab.0.right" timestamp="1601389638377">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
-    <state width="1124" height="196" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1597496296849" />
-    <state x="88" y="30" key="SettingsEditor" timestamp="1596984831826">
+    <state width="1014" height="196" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1601389638377" />
+    <state x="312" y="158" key="RollbackChangesDialog" timestamp="1601389603825">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="88" y="30" key="SettingsEditor/0.30.1536.834@0.30.1536.834" timestamp="1596984831826" />
+    <state x="312" y="158" key="RollbackChangesDialog/0.30.1536.834@0.30.1536.834" timestamp="1601389603825" />
+    <state x="161" y="30" key="SettingsEditor" timestamp="1601372417385">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="161" y="30" key="SettingsEditor/0.30.1536.834@0.30.1536.834" timestamp="1601372417385" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1596563053670">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
@@ -323,10 +263,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="425" height="209" key="javadoc.popup.new/0.30.1366.738@0.30.1366.738" timestamp="1596233389399" />
-    <state x="255" y="206" width="672" height="677" key="run.anything.popup" timestamp="1601223403301">
+    <state x="255" y="206" width="672" height="677" key="run.anything.popup" timestamp="1601375690300">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="255" y="206" width="672" height="677" key="run.anything.popup/0.30.1536.834@0.30.1536.834" timestamp="1601223403301" />
+    <state x="255" y="206" width="672" height="677" key="run.anything.popup/0.30.1536.834@0.30.1536.834" timestamp="1601375690300" />
     <state x="262" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1596897966755">
       <screen x="0" y="30" width="1536" height="834" />
     </state>

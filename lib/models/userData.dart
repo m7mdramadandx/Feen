@@ -27,16 +27,16 @@ class UserData {
 
   factory UserData.fromDocument(DocumentSnapshot doc) {
     return UserData(
-      id: doc['id'] ?? '',
-      firstName: doc['firstName'] ?? '',
-      lastName: doc['lastName'] ?? '',
-      email: doc['email'] ?? '',
-      phoneNumber: doc['phoneNumber'] ?? '',
-      job: doc['job'] ?? '',
-      survey: doc['survey'] ?? '',
-      type: doc['Type'] ?? '',
-      levels: doc['levels'] ?? '',
-      triesNumber: doc['triesNumber'] ?? '',
+      id: doc['id'] != null ? doc['id'] : '',
+      firstName: doc['firstName'] != null ? doc['firstName'] : 'first_name',
+      lastName: doc['lastName'] != null ? doc['lastName'] : 'last_name',
+      email: doc['email'] != null ? doc['email'] : 'email',
+      phoneNumber: doc['phoneNumber'] != null ? doc['phoneNumber'] : 'phone',
+      job: doc['job'] != null ? doc['job'] : 'job',
+      survey: doc['survey'] != null ? doc['survey'] : '0',
+      type: doc['Type'] != null ? doc['Type'] : 'type',
+      levels: doc['levels'] != null ? doc['levels'] : '1',
+      triesNumber: doc['triesNumber'] != null ? doc['triesNumber'] : '0',
     );
   }
 

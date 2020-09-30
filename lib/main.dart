@@ -24,12 +24,14 @@ class Feen extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-            scaffoldBackgroundColor: backgroundColor,
-            primaryColor: primaryColor,
-            accentColor: primaryColor,
-            textSelectionColor: lightGreen,
-            cursorColor: primaryColor,
-            textSelectionHandleColor: gold),
+          scaffoldBackgroundColor: backgroundColor,
+          primaryColor: primaryColor,
+          accentColor: primaryColor,
+          textSelectionColor: lightGreen,
+          cursorColor: primaryColor,
+          textSelectionHandleColor: gold,
+          fontFamily: 'Cairo',
+        ),
         home: LandingPage(),
         routes: {
           IntroductionScreen.id: (context) => IntroductionScreen(),

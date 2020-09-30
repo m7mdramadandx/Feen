@@ -29,7 +29,7 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
   }
 
   readLocal() async {
-    if (await _auth.currentUser() != null) {
+    if (_auth.currentUser != null) {
       currentUser = await AuthServices().CurrentUser();
     } else {
       Route route = MaterialPageRoute(builder: (builder) => LoginScreen());

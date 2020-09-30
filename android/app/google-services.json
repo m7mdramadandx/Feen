@@ -8,12 +8,65 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:307159159247:android:ef58b86351365c93ef82ba",
+        "android_client_info": {
+          "package_name": "com.fci.feen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307159159247-uo1kfp1hjgp3tojv71k1mrbk7dtl33it.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fci.feen",
+            "certificate_hash": "fff50eebaf410b41cf8dbd313b3faced68ebbca1"
+          }
+        },
+        {
+          "client_id": "307159159247-atasp40h3lbtr1dcds1ibdhinp3cu7vj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv5AaI7dnL9DNlzKrTD0j_GyW91jPE0_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307159159247-atasp40h3lbtr1dcds1ibdhinp3cu7vj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:307159159247:android:cc3d897a34fb822eef82ba",
         "android_client_info": {
           "package_name": "com.fci.fen"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "307159159247-fbqck0e84isrb0hij1q57pto3ddljiif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fci.fen",
+            "certificate_hash": "f4aa6b5d2a528a6f6102cea8481a2ce86a39d03a"
+          }
+        },
+        {
+          "client_id": "307159159247-a84ambtp934uvkar8iv984c98q12fqqi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fci.fen",
+            "certificate_hash": "fff50eebaf410b41cf8dbd313b3faced68ebbca1"
+          }
+        },
         {
           "client_id": "307159159247-qvh01fgpqkv0j06i5e27trpr35mnhmdl.apps.googleusercontent.com",
           "client_type": 1,

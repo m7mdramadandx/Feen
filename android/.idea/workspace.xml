@@ -1,19 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="878f2031-9a84-4d19-8e66-f6a6b75a40a0" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="3ea3df6d-8166-4f65-b0d0-d2e601837d5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/../.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Feen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Feen.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/models/user.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/models/userData.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/models/userData.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/services/Database.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/services/Database.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/services/MapService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/services/MapService.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/screens/AtmFinder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ui/screens/AtmFinder.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/screens/Dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ui/screens/Dashboard.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/screens/Introduction.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ui/screens/Introduction.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/screens/Landing.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ui/screens/Landing.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/screens/Login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ui/screens/Login.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/screens/PhoneInsertion.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ui/screens/PhoneInsertion.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/screens/Survey.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ui/screens/Survey.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/screens/Verification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ui/screens/Verification.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/widgets/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ui/widgets/constants.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="FUH0216913011885" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="android" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -23,104 +82,140 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="C:\Users\Roa'a\Documents\GitHub\Fen\android\.idea" />
-      </set>
-    </option>
-  </component>
-  <component name="ProjectId" id="1ZOl0MWy0p03IJIlZTFFGVLHNbG" />
+  <component name="ProjectId" id="1iBLRMxkvc0N49aZv36GEaLuCf8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="android.project.structure.last.selected" value="SDK Location" />
-    <property name="android.project.structure.proportion" value="0.15" />
-    <property name="android.sdk.path" value="E:/Programs/sdk-tools" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../#Fourth Year/Graduation Project/App/Fen-master" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
+  <component name="RunManager" selected="Android App.app">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-    </configuration>
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="android:app [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.android:app [signingReport]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="878f2031-9a84-4d19-8e66-f6a6b75a40a0" name="Default Changelist" comment="" />
-      <created>1584717796828</created>
+      <changelist id="3ea3df6d-8166-4f65-b0d0-d2e601837d5a" name="Default Changelist" comment="" />
+      <created>1601376028963</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1584717796828</updated>
+      <updated>1601376028963</updated>
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="WindowStateProjectService">
+    <state x="549" y="202" key="FileChooserDialogImpl" timestamp="1601380112409">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="549" y="202" key="FileChooserDialogImpl/0.30.1536.834@0.30.1536.834" timestamp="1601380112409" />
+    <state width="1346" height="199" key="GridCell.Tab.0.bottom" timestamp="1601383317764">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1346" height="199" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1601383317764" />
+    <state width="1346" height="199" key="GridCell.Tab.0.center" timestamp="1601383317733">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1346" height="199" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1601383317733" />
+    <state width="1346" height="199" key="GridCell.Tab.0.left" timestamp="1601383317733">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1346" height="199" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1601383317733" />
+    <state width="1346" height="199" key="GridCell.Tab.0.right" timestamp="1601383317734">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1346" height="199" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1601383317734" />
+    <state x="426" y="206" width="672" height="677" key="run.anything.popup" timestamp="1601376305762">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="426" y="206" width="672" height="677" key="run.anything.popup/0.30.1536.834@0.30.1536.834" timestamp="1601376305762" />
   </component>
 </project>

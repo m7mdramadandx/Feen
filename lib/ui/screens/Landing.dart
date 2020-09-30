@@ -23,7 +23,7 @@ class _LandingPageState extends State<LandingPage> {
   }
 
   readLocal() async {
-    if (await _auth.currentUser() != null) {
+    if (_auth.currentUser != null) {
       currentUser = await AuthServices().CurrentUser();
       Route route = MaterialPageRoute(
           builder: (builder) =>

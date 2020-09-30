@@ -200,8 +200,7 @@ class _PhoneInsertionScreenState extends State<PhoneInsertionScreen> {
         });
     final PhoneVerificationCompleted verificationCompleted =
         (AuthCredential phoneAuthCredential) async {
-      final AuthResult result =
-          (await _auth.signInWithCredential(phoneAuthCredential));
+      final result = (await _auth.signInWithCredential(phoneAuthCredential));
 
       final FirebaseUser currentUser = await _auth.currentUser();
       assert(result.user.uid == currentUser.uid);
@@ -219,8 +218,7 @@ class _PhoneInsertionScreenState extends State<PhoneInsertionScreen> {
       }
     };
 
-    final PhoneVerificationFailed verificationFailed =
-        (AuthException authException) {
+    final PhoneVerificationFailed verificationFailed = (authException) {
       Navigator.pop(context);
       Fluttertoast.showToast(msg: 'عذرا, رقم الهاتف غير صحيح');
     };
