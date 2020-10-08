@@ -11,27 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="188c1b28-d3ff-4274-8feb-9ea33c44757b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Feen.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/user.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/userData.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/userData.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/MapService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/MapService.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/screens/AtmFinder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/AtmFinder.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screens/Dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/Dashboard.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screens/Introduction.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/Introduction.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screens/Landing.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/Landing.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screens/Login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/Login.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screens/PhoneInsertion.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/PhoneInsertion.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/widgets/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/widgets/constants.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +48,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/services" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -76,11 +58,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\flutterProjects\Feen\lib\services" />
       <recent name="C:\Users\mhmdr\Documents\flutterProjects\Feen\android\app\src\main\res\drawable" />
       <recent name="C:\Users\mhmdr\Documents\flutterProjects\Feen\android\app\src\main" />
       <recent name="C:\Users\mhmdr\Documents\flutterProjects\Feen\lib\ui\service" />
       <recent name="C:\Users\mhmdr\Documents\flutterProjects\Feen\lib\ui\screen" />
-      <recent name="C:\Users\mhmdr\Documents\flutterProjects\New folder (2)\Fen\lib\ui\screen" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -210,31 +192,31 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="477" height="466" key="DebuggerActiveHint/0.30.1536.834@0.30.1536.834" timestamp="1596592730945" />
-    <state x="521" y="170" key="FileChooserDialogImpl" timestamp="1601380343445">
+    <state x="521" y="170" key="FileChooserDialogImpl" timestamp="1601469059569">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1596137010294" />
-    <state x="521" y="170" key="FileChooserDialogImpl/0.30.1536.834@0.30.1536.834" timestamp="1601380343445" />
-    <state width="1014" height="196" key="GridCell.Tab.0.bottom" timestamp="1601389638377">
+    <state x="521" y="170" key="FileChooserDialogImpl/0.30.1536.834@0.30.1536.834" timestamp="1601469059569" />
+    <state width="1055" height="196" key="GridCell.Tab.0.bottom" timestamp="1602110277466">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
-    <state width="1014" height="196" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1601389638377" />
-    <state width="1014" height="196" key="GridCell.Tab.0.center" timestamp="1601389638377">
+    <state width="1055" height="196" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1602110277466" />
+    <state width="1055" height="196" key="GridCell.Tab.0.center" timestamp="1602110277466">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
-    <state width="1014" height="196" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1601389638377" />
-    <state width="1014" height="196" key="GridCell.Tab.0.left" timestamp="1601389638377">
+    <state width="1055" height="196" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1602110277466" />
+    <state width="1055" height="196" key="GridCell.Tab.0.left" timestamp="1602110277466">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
-    <state width="1014" height="196" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1601389638377" />
-    <state width="1014" height="196" key="GridCell.Tab.0.right" timestamp="1601389638377">
+    <state width="1055" height="196" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1602110277466" />
+    <state width="1055" height="196" key="GridCell.Tab.0.right" timestamp="1602110277466">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1596234016134" />
-    <state width="1014" height="196" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1601389638377" />
+    <state width="1055" height="196" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1602110277466" />
     <state x="312" y="158" key="RollbackChangesDialog" timestamp="1601389603825">
       <screen x="0" y="30" width="1536" height="834" />
     </state>

@@ -1,11 +1,7 @@
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:Feen/models/PlaceResponse.dart';
 import 'package:Feen/models/PlaceResult.dart';
-import 'package:Feen/services/Database.dart';
-import 'package:Feen/ui/screens/Dashboard.dart';
-import 'package:Feen/ui/widgets/constants.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart' as http;

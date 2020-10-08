@@ -5,7 +5,6 @@ import 'package:Feen/models/Error.dart';
 import 'package:Feen/models/MenuList.dart';
 import 'package:Feen/models/PlaceResult.dart';
 import 'package:Feen/services/Database.dart';
-import 'package:Feen/services/MapService.dart';
 import 'package:Feen/ui/screens/Survey.dart';
 import 'package:Feen/ui/widgets/colors.dart';
 import 'package:Feen/ui/widgets/constants.dart';
